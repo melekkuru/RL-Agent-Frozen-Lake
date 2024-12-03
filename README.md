@@ -73,9 +73,5 @@ jupyter notebook Frozen_Lake_RL_Agent.ipynb
 
 ---
 
-## License
 
-This project is licensed under the MIT License. Feel free to use, modify, and share!
-```
 
-You can paste this into your repository's `README.md` file. Let me know if you need any changes!
