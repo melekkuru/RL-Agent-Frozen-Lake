@@ -1,5 +1,4 @@
 
-```markdown
 # RL Agent for Frozen Lake
 
 This repository contains an implementation of reinforcement learning agents to solve the **Frozen Lake** environment using **Monte Carlo** and **SARSA** algorithms. The project demonstrates the use of reinforcement learning techniques to solve sequential decision-making problems in a simulated grid world.
