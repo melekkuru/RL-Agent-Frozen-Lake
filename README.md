@@ -1,77 +1,71 @@
+# RL Agent: Frozen Lake
 
-# RL Agent for Frozen Lake
+Reinforcement learning agents solving the **Frozen Lake** environment using **Monte Carlo** and **SARSA** algorithms. The agent learns to navigate a slippery grid world, reaching the goal while avoiding holes.
 
-This repository contains an implementation of reinforcement learning agents to solve the **Frozen Lake** environment using **Monte Carlo** and **SARSA** algorithms. The project demonstrates the use of reinforcement learning techniques to solve sequential decision-making problems in a simulated grid world.
+> Developed as part of the **Dynamic Programming and Reinforcement Learning (MA338)** module at the University of Essex.
 
 ---
 
 ## Overview
 
-The Frozen Lake environment is a benchmark problem in reinforcement learning. The agent must navigate a grid world to reach the goal while avoiding holes, using two key algorithms:
+Frozen Lake is a classic RL benchmark where an agent must traverse a grid from start to goal on a frozen surface. Some tiles are holes that end the episode, and the ice is slippery — actions don't always produce the intended movement.
 
-1. **Monte Carlo Method**: Learns by observing complete episodes and using averaged rewards for policy updates.
-2. **SARSA Algorithm**: An on-policy temporal-difference method to learn Q-values.
+**Two algorithms are implemented:**
 
----
-
-## Features
-
-- Implementation of **Monte Carlo** and **SARSA** algorithms.
-- Clear documentation with code explanations.
-- Visualization of rewards and policy convergence.
-- Code written for easy customization and reproducibility.
+1. **Monte Carlo Method** — learns from complete episodes, averaging cumulative rewards for policy updates
+2. **SARSA** — on-policy temporal-difference learning for step-by-step Q-value updates
 
 ---
 
-## Repository Structure
+## Key features
+
+- Epsilon-greedy exploration with configurable decay
+- Q-table-based value estimation
+- Visualization of reward convergence across episodes
+- Policy extraction and comparison between methods
+- Analysis of convergence speed and final performance
+
+---
+
+## Results
+
+- Both agents successfully learn to solve the Frozen Lake environment
+- Reward trends show clear learning progression across training episodes
+- Monte Carlo and SARSA converge to similar optimal policies
+- Trade-offs between the two methods are discussed in the notebook
+
+---
+
+## Project structure
 
 ```
 RL-Agent-Frozen-Lake/
-├── Frozen_Lake_RL_Agent.ipynb  # Main Jupyter Notebook for the project
-├── requirements.txt            # Required Python libraries
-└── README.md                   # Project description and instructions
+├── Frozen_Lake_RL_Agent.ipynb   # Main implementation and analysis
+├── requirements.txt
+└── README.md
 ```
 
 ---
 
-## How to Use
+## Getting started
 
-### 1. Clone the Repository
 ```bash
 git clone https://github.com/melekkuru/RL-Agent-Frozen-Lake.git
 cd RL-Agent-Frozen-Lake
-```
 
-### 2. Install Dependencies
-Ensure you have Python installed. Use the following command to install the required libraries:
-```bash
 pip install -r requirements.txt
-```
 
-### 3. Run the Notebook
-Open the Jupyter Notebook to explore and run the implementation:
-```bash
 jupyter notebook Frozen_Lake_RL_Agent.ipynb
 ```
 
 ---
 
-## Key Results
+## Technologies
 
-- Both **Monte Carlo** and **SARSA** agents solve the Frozen Lake environment effectively.
-- Reward trends and policy convergence are visualized in the notebook.
-
----
-
-## Skills Demonstrated
-
-- Reinforcement Learning
-- Monte Carlo Methods
-- SARSA Algorithm
-- Python Programming
-- Data Visualization with Matplotlib
+Python · OpenAI Gym · NumPy · Matplotlib
 
 ---
 
+## License
 
-
+This project is for educational purposes. Feel free to use it as a reference.
